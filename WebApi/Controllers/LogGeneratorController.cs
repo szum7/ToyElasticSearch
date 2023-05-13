@@ -6,9 +6,9 @@ namespace WebApi.Controllers
     [Route("[controller]")]
     public class LogGeneratorController : ControllerBase
     {
-        private readonly ILogger<LogGeneratorController> _logger;
+        private readonly Serilog.ILogger _logger;
 
-        public LogGeneratorController(ILogger<LogGeneratorController> logger)
+        public LogGeneratorController(Serilog.ILogger logger)
         {
             _logger = logger;
         }
@@ -16,7 +16,8 @@ namespace WebApi.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok();
+            _logger.Error(new NullReferenceException(), "This is a custom error with a custom property: {customProperty}", 123);
+            return Ok("Success");
         }
     }
 }
