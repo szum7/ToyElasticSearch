@@ -14,8 +14,8 @@ Experiment with elasticsearch.
 4. Visit Kibana and see the logs
 
 ### Urls
-- Kibana | http://localhost:5601/app/home#/
-- Elasticsearch | http://localhost:9200/
+- Kibana / http://localhost:5601/app/home#/
+- Elasticsearch / http://localhost:9200/
 
 ### Additional info
 #### Max virtual memory too low issue
@@ -35,4 +35,4 @@ exit
 [Stackoverflow source](https://stackoverflow.com/questions/51445846/elasticsearch-max-virtual-memory-areas-vm-max-map-count-65530-is-too-low-inc)
 
 ### Sources
-[Logging into Elasticsearch using Serilog and viewing logs in Kibana | .NET Core Tutorial](https://youtu.be/0acSdHJfk64)
+[Nick Chapsas / Logging into Elasticsearch using Serilog and viewing logs in Kibana | .NET Core Tutorial](https://youtu.be/0acSdHJfk64)
