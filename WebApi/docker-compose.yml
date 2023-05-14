@@ -16,9 +16,9 @@ services:
         volumes:
             - data01:/usr/share/elasticsearch/data
         ports:
-          - 9200:9200
+            - 9200:9200
         networks:
-          - elastic
+            - elastic
 
     kib01:
         image: docker.elastic.co/kibana/kibana:7.9.0
@@ -37,4 +37,4 @@ volumes:
     
 networks:
     elastic:
-        driver: bridge    
+        driver: bridge
